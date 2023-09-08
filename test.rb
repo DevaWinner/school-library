@@ -52,3 +52,12 @@ puts "\n#{student2.name}:"
 puts "Age: #{student2.age}"
 puts "Can use services? #{student2.can_use_services?}"
 puts "Play hooky: #{student2.play_hooky}"
+
+# Outputting book information and rentals
+puts "\n#{book1.title} by #{book1.author}"
+puts 'Rentals for the book:'
+book1.rentals.each { |rental| puts "Rented on #{rental.date} by #{rental.person.name}" }
+
+puts "\n#{book2.title} by #{book2.author}"
+puts 'Rentals for the book:'
+book2.rentals.each { |rental| puts "Rented on #{rental.date} by #{rental.person.name}" }
