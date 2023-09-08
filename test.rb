@@ -1,6 +1,17 @@
 require_relative 'person'
 require_relative 'capitalize_decorator'
 require_relative 'trimmer_decorator'
+require_relative 'students'
+require_relative 'rental'
+require_relative 'book'
+require_relative 'classroom'
+p book = Book.new('Title', 'Author')
+p person = Person.new(25, 'John Doe')
+
+# Create a rental and associate it with the book and person
+p Rental.new(book, person)
+
+# Creating a person
 
 person = Person.new(22, 'maximilianus')
 person.correct_name
