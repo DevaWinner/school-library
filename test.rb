@@ -27,3 +27,8 @@ book2 = Book.new('The Lord of the Rings', 'J.R.R. Tolkien')
 # Creating unique instances of students
 student1 = Student.new(16, 'John Doe', parent_permission: false)
 student2 = Student.new(17, 'Jane Smith', parent_permission: false)
+
+# Creating a classroom
+classroom = Classroom.new('A101')
+classroom.add_student(student1)
+classroom.add_student(student2)
