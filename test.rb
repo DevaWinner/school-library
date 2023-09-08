@@ -36,3 +36,8 @@ classroom.add_student(student2)
 # Creating rentals
 Rental.new(book1, student1)
 Rental.new(book2, student2)
+
+# Outputting classroom information
+puts "Classroom: #{classroom.label}"
+puts 'Students in the classroom:'
+classroom.students.each { |student| puts "#{student.name} (ID: #{student.id})" }
