@@ -41,3 +41,14 @@ Rental.new(book2, student2)
 puts "Classroom: #{classroom.label}"
 puts 'Students in the classroom:'
 classroom.students.each { |student| puts "#{student.name} (ID: #{student.id})" }
+
+# Outputting student information and rentals
+puts "\n#{student1.name}:"
+puts "Age: #{student1.age}"
+puts "Can use services? #{student1.can_use_services?}"
+puts "Play hooky: #{student1.play_hooky}"
+
+puts "\n#{student2.name}:"
+puts "Age: #{student2.age}"
+puts "Can use services? #{student2.can_use_services?}"
+puts "Play hooky: #{student2.play_hooky}"
