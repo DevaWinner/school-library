@@ -19,3 +19,7 @@ capitalized_person = CapitalizeDecorator.new(person)
 puts capitalized_person.correct_name
 capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
 puts capitalized_trimmed_person.correct_name
+
+# Creating unique instances of books
+book1 = Book.new('The Great Gatsby', 'F. Scott Fitzgerald')
+book2 = Book.new('The Lord of the Rings', 'J.R.R. Tolkien')
