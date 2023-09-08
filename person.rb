@@ -29,4 +29,7 @@ class Person < Nameable
     @age >= 18 || @parent_permission
   end
 
+  def add_rental(book, date)
+    rentals << Rental.new(book, self, date)
+  end
 end
