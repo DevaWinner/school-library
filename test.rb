@@ -32,3 +32,7 @@ student2 = Student.new(17, 'Jane Smith', parent_permission: false)
 classroom = Classroom.new('A101')
 classroom.add_student(student1)
 classroom.add_student(student2)
+
+# Creating rentals
+Rental.new(book1, student1)
+Rental.new(book2, student2)
