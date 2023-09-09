@@ -25,4 +25,14 @@ class App
     end
   end
 
+  def create_student(age, name, parent_permission)
+    student = Student.new(age, name, parent_permission)
+    @people << student
+  end
+
+  def create_teacher(age, name, specialization)
+    teacher = Teacher.new(age, name, specialization)
+    @people << teacher
+  end
+
 end
