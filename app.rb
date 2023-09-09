@@ -11,5 +11,18 @@ class App
     @rentals = []
   end
 
-  
+  def book_list
+    puts 'List of all books'
+    @books.each do |book|
+      puts "Title: \"#{book.title}\" , Author: #{book.author}"
+    end
+  end
+
+  def people_list
+    puts 'List of all people'
+    @people.each do |person|
+      puts person
+    end
+  end
+
 end
