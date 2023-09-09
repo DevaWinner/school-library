@@ -75,4 +75,17 @@ class App
     puts 'Invalid Selection. Please choose a valid index'
   end
 
+  def view_book_by_renters(id)
+    rented_books_by_id = @rentals.select { |rental| rental.person == id.to_i }
+
+    if rented_books_by_id.empty?
+      puts 'No rentals found for this id'
+    else
+      rented_books_by_id.each do |rental|
+        book = @books.find { |item| item.id == rental.book }
+        puts "Date: #{rental.date} ,Title: #{book.title} by #{book.author}"
+      end
+    end
+  end
+
 end
