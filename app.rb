@@ -126,4 +126,30 @@ class App
     puts 'Teacher created successfully'
   end
 
+  def create_a_book
+    puts 'Provide book information'
+    print 'Book Title: '
+    title = gets.chomp
+    print 'Author Name: '
+    author = gets.chomp
+    create_book(title, author)
+    puts 'Book created successfully'
+  end
+
+  def create_a_rental
+    puts 'Provide rental information'
+    puts 'Select book from the following list by number: '
+    books_for_rent
+    book_id = gets.chomp.to_i
+    book = rented_book(book_id)
+    puts 'Select person from the following list by number (not id): '
+    all_renters
+    person_id = gets.chomp.to_i
+    person = renter_person(person_id)
+    print 'Date: '
+    date = gets.chomp.to_s
+    create_rental(date, book, person)
+    puts 'Rental created successfully'
+  end
+
 end
