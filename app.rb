@@ -101,4 +101,29 @@ class App
     end
   end
 
+  def create_student_with_one
+    puts 'Generating Student...'
+    print 'Student Age:'
+    age = gets.chomp.to_i
+    print 'Student Name:'
+    name = gets.chomp
+    print 'Parent Permission (y/n): '
+    parent_permission = gets.chomp.downcase
+    parent_permission = parent_permission == 'y'
+    create_student(age, name, parent_permission)
+    puts 'Student created successfully'
+  end
+
+  def create_teacher_with_three
+    puts 'Generating Teacher...'
+    print 'Teacher Age:'
+    age = gets.chomp.to_i
+    print 'Teacher Name:'
+    name = gets.chomp
+    print 'Specialization:'
+    specialization = gets.chomp.to_s
+    create_teacher(age, name, specialization)
+    puts 'Teacher created successfully'
+  end
+
 end
