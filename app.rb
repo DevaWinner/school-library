@@ -53,9 +53,10 @@ class App
 
   def all_renters
     @people.each_with_index do |person, index|
-      if person.is_a?(Student)
+      case person
+      when Student
         puts "#{index}) [Student] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
-      elsif person.is_a?(Teacher)
+      when Teacher
         puts "#{index}) [Teacher] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       else
         puts "#{index}) [Unknown Person] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
