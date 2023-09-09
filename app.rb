@@ -45,4 +45,22 @@ class App
     @rentals << rental
   end
 
+  def books_for_rent
+    @books.each_with_index do |book, index|
+      puts "#{index}) Title: \"#{book.title}\" , Author: #{book.author}"
+    end
+  end
+
+  def all_renters
+    @people.each_with_index do |person, index|
+      if person.is_a?(Student)
+        puts "#{index}) [Student] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      elsif person.is_a?(Teacher)
+        puts "#{index}) [Teacher] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      else
+        puts "#{index}) [Unknown Person] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      end
+    end
+  end
+
 end
