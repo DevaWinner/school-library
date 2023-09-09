@@ -63,4 +63,16 @@ class App
     end
   end
 
+  def rented_book(selection_id)
+    return @books[selection_id].id unless selection_id.negative? || selection_id > @books.length
+
+    puts 'Invalid Selection. Please choose a valid index'
+  end
+
+  def renter_person(selection_id)
+    return @people[selection_id].id unless selection_id.negative? || selection_id > @people.length
+
+    puts 'Invalid Selection. Please choose a valid index'
+  end
+
 end
