@@ -53,10 +53,9 @@ class App
 
   def all_renters
     @people.each_with_index do |person, index|
-      case person
-      when Student
+      if person.is_a?(Student)
         puts "#{index}) [Student] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
-      when Teacher
+      elsif person.is_a?(Teacher)
         puts "#{index}) [Teacher] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       else
         puts "#{index}) [Unknown Person] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
@@ -153,12 +152,15 @@ class App
     puts 'Rental created successfully'
   end
 
-
-
   def search_rental_by_id
     print 'ID of the person: '
     id = gets.chomp.to_i
     puts 'List all rentals'
     view_book_by_renters(id)
+  end
+
+  def exit_terminal
+    puts 'Exiting terminal....'
+    exit(0)
   end
 end
