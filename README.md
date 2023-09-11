@@ -25,6 +25,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [School Library] <a name="about-project"></a>
+
 The OOP School Library Management System is a comprehensive software application designed to efficiently manage and organize the library resources at a school. This system allows the librarian to maintain records of books, students, and teachers, as well as track borrowing activities. Built on the principles of Object-Oriented Programming (OOP), this application ensures a well-organized and user-friendly interface for all library-related tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -72,11 +73,15 @@ Clone this repository to your desired folder:
 ```
 
 ### Installation
+
 Install **Ruby Installer** using this link
+
 - <a href="https://rubyinstaller.org/downloads/">Ruby Installer</a>.
 
 ### Usage
+
 To run the project, execute the following command:
+
 ```
 ruby fileName.rb
 ```
@@ -91,9 +96,16 @@ ruby fileName.rb
 - Twitter: [@twitterhandle](https://twitter.com/WinnerDevq)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/winnera/)
 
+👤 **Yonas Henok**
+
+- GitHub: [@YonasHenok](https://github.com/Yonashenok)
+- Twitter: [@YonasHenok3](https://www.twitter.com/YonasHenok3)
+- LinkedIn: [Yonas Henok](https://www.linkedin.com/in/yonas-henok/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
 - **Decorator** design pattern.
 - Set up **associations**.
 - Add basic UI.
@@ -125,4 +137,5 @@ I would like to thank Microverse for including this in their curriculum.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
